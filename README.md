@@ -4,17 +4,32 @@ Portfolio website showing various projects I have created or contributed to.
 
 Also includes various information on different coding websites such as CodeWars, Project Euler and Advent of Code.
 
-## Development
+This website is made using Vite, React, Typescript and SASS and hosted via GitHub Pages.
 
-Install dependencies using `npm`
+## How to run it
 
+Clone this repository. I recommend naming the directory (e.g. Portfolio):
 ```bash
+git clone https://github.com/OskarBrzeski/OskarBrzeski.github.io.git Portfolio
+```
+
+Install the dependencies:
+```bash
+cd Portfolio
 npm install
 ```
 
-This project uses the Tailwind CLI to generate CSS classes. To automatically generate
-CSS classes when you save an HTML file, have a terminal open with this command running
-
-```bash
-npx tailwindcss -i ./input.css -o ./output.css --watch
+Start the dev server:
+``` bash
+npm run dev
 ```
+
+The dev server will usually serve the web page at `localhost:5173`
+
+# Development
+
+If you wish to make changes to the CSS, first ensure that SASS is watching for file changes:
+```bash
+npx sass --watch src/sass:src/css
+```
+This way, all changes to SASS files will be compiled to CSS automatically.
